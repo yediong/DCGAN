@@ -66,5 +66,4 @@ Adjust the relevant hyperparameters (batch_size, lr, beta1 of Adam optimizer, et
 # Notes
 Check *Project Report.pdf* for more details. 
 
-**Plus: This outsourcing project earned me a small profit of 110 RMB, haha.
-**
+**Plus: This outsourcing project earned me a small profit of 110 RMB, haha.**
