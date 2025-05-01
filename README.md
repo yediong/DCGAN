@@ -2,7 +2,7 @@
 Human-face Generation task based on DCGAN, using the CelebA dataset, which contains 202,599 face images of 10,177 celebrities. (P.S. This was a time-limited outsourcing project. )
 ### Visualization of the Iteration Process
 
-![](attachments/1.png)![](attachments/2.png)![](attachments/3.png)
+![](attachments/1.png =200x200)![](attachments/2.png =200x200)![](attachments/3.png =200x200)
 
 # Quick Start
 The following describes how this project will be deployed. 
