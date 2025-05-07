@@ -13,25 +13,25 @@ Reference Tutorial: [DCGAN实现面孔生成（Celeb-A数据集）](https://blog
 Download the CelebA Dataset from Huggingface by **hfd**.
 ### Instructions
 1. download hfd：
-```
+```bash
 wget https://hf-mirror.com/hfd/hfd.sh
 chmod a+x hfd.sh
 ```
 
 2. install aria2:
-```
+```bash
 sudo apt update
 sudo apt install aria2
 ```
 
 3. set environment variables: 
-```
+```bash
 Linux：export HF_ENDPOINT=https://hf-mirror.com
 Windows Powershell：$env:HF_ENDPOINT = “https://hf-mirror.com”
 ```
 
 4. download dataset: 
-```
+```bash
 ./hfd.sh nielsr/CelebA-faces --dataset
 ```
 
