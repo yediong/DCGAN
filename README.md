@@ -1,7 +1,6 @@
 # 🚀 DCGAN-Face-Generation 
 *High-Quality Face Synthesis with Deep Convolutional GANs*
 
-[![License](https://img.shields.io/github/license/yediong/DCGAN-Face-Generation)](https://github.com/yediong/DCGAN-Face-Generation/blob/main/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/yediong/DCGAN-Face-Generation)
 
 ---
@@ -9,7 +8,7 @@
 ## 🌟 Overview
 State-of-the-art face generation using **Deep Convolutional Generative Adversarial Networks (DCGAN)** trained on the CelebA dataset containing **202,599 celebrity face images**.
 
-> 💡 *This was a time-constrained freelance project completed in just 1 hour, achieving impressive results under pressure!*
+> 💡 *This was a time-constrained freelance project completed in just 1 hour. *
 
 ---
 
@@ -82,7 +81,7 @@ python generate_faces.py
 ---
 
 ## ⚙️ Configuration Options
-Tune these hyperparameters in `config.py`:
+Tune these hyperparameters in `DCGAN.py`:
 | Parameter      | Description              | Default |
 |----------------|--------------------------|---------|
 | `batch_size`   | Training batch size      | 128     |
@@ -115,13 +114,9 @@ While this was a freelance project, contributions are welcome for improvement su
 
 ---
 
-## 🧾 License
-MIT License - see [LICENSE](LICENSE) for details
-
----
 
 ## 💰 Project ROI
-> 🎉 Successfully delivered for ¥110 profit - proof that quick GAN projects can deliver value! 💸
+> 🎉 This outsourcing project earned me a small profit of 110 RMB, haha. 💸
 
 ---
 
