@@ -39,7 +39,7 @@ Windows Powershell：$env:HF_ENDPOINT = “https://hf-mirror.com”
 1. Deploy the code for this project：
 
 ```bash
-git clone https://github.com/yediong/DCGAN_Face_Generation.git
+git clone https://github.com/yediong/DCGAN-Face-Generation.git
 ```
 
 2. Move in the dataset and modify the path.
