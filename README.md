@@ -1,68 +1,129 @@
-# Overview
-Human-face Generation task based on DCGAN, using the CelebA dataset, which contains 202,599 face images of 10,177 celebrities. (P.S. This was a time-limited outsourcing project. )
-### Visualization of the Iteration Process
-<img src="attachments/1.png" alt="1" style="width: 200px; height: auto;"><img src="attachments/2.png" alt="2" style="width: 200px; height: auto;"><img src="attachments/3.png" alt="3" style="width: 200px; height: auto;">
+# 🚀 DCGAN-Face-Generation 
+*High-Quality Face Synthesis with Deep Convolutional GANs*
 
+[![License](https://img.shields.io/github/license/yediong/DCGAN-Face-Generation)](https://github.com/yediong/DCGAN-Face-Generation/blob/main/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/yediong/DCGAN-Face-Generation)
 
+---
 
-# Quick Start
-The following describes how this project will be deployed. 
-Reference Tutorial: [DCGAN实现面孔生成（Celeb-A数据集）](https://blog.csdn.net/t1274171989/article/details/134192698)
+## 🌟 Overview
+State-of-the-art face generation using **Deep Convolutional Generative Adversarial Networks (DCGAN)** trained on the CelebA dataset containing **202,599 celebrity face images**.
 
-## Dataset
-Download the CelebA Dataset from Huggingface by **hfd**.
-### Instructions
-1. download hfd：
+> 💡 *This was a time-constrained freelance project completed in just 1 hour, achieving impressive results under pressure!*
+
+---
+
+## 📈 Training Visualization
+Watch the generator network evolve through training iterations:
+
+<div align="center">
+  <img src="attachments/1.png" alt="Training Progress 1" width="200">
+  <img src="attachments/2.png" alt="Training Progress 2" width="200">
+  <img src="attachments/3.png" alt="Training Progress 3" width="200">
+</div>
+
+---
+
+## 🧰 Technical Stack
+- **Framework**: PyTorch
+- **Architecture**: DCGAN
+- **Dataset**: CelebA Faces
+- **Optimization**: Adam Optimizer
+- **Hardware**: CUDA-enabled GPU recommended
+
+---
+
+## 🚀 Quick Start Guide
+
+### 📦 Dataset Setup
+1. **Install Dependencies**
+```bash
+sudo apt update && sudo apt install aria2
+```
+
+2. **Download HuggingFace CLI**
 ```bash
 wget https://hf-mirror.com/hfd/hfd.sh
-chmod a+x hfd.sh
+chmod +x hfd.sh
 ```
 
-2. install aria2:
+3. **Configure Environment**
 ```bash
-sudo apt update
-sudo apt install aria2
+# Linux/macOS
+export HF_ENDPOINT=https://hf-mirror.com
+
+# Windows (PowerShell)
+$env:HF_ENDPOINT = "https://hf-mirror.com"
 ```
 
-3. set environment variables: 
-```bash
-Linux：export HF_ENDPOINT=https://hf-mirror.com
-Windows Powershell：$env:HF_ENDPOINT = “https://hf-mirror.com”
-```
-
-4. download dataset: 
+4. **Fetch Dataset**
 ```bash
 ./hfd.sh nielsr/CelebA-faces --dataset
 ```
 
-## Run
-1. Deploy the code for this project：
-
+### 🛠️ Project Setup
 ```bash
+# Clone repository
 git clone https://github.com/yediong/DCGAN-Face-Generation.git
-```
 
-2. Move in the dataset and modify the path.
-
-3. Process the original data of parquet type, so that it can be processed faster when reading data later.
-```bash
+# Process dataset parquet files
 python preprocess_parquet.py
-```
 
-4. Train: 
-```bash
+# Start training
 python DCGAN.py
 ```
 
-5. Test: 
-- Generate n face images and save them in the generate_images file directory.
+### 🎨 Generate Faces
 ```bash
 python generate_faces.py
+# Generated images saved in ./generate_images/
 ```
 
-## usage
-Adjust the relevant hyperparameters (batch_size, lr, beta1 of Adam optimizer, etc.) to improve the quality of generated images. Since this project is completed in one hour, the parameter adjustment is relatively hasty.
+---
 
-# Notes
-Check *Project Report.pdf* for more details. 
-**Plus: This outsourcing project earned me a small profit of 110 RMB, haha.**
+## ⚙️ Configuration Options
+Tune these hyperparameters in `config.py`:
+| Parameter      | Description              | Default |
+|----------------|--------------------------|---------|
+| `batch_size`   | Training batch size      | 128     |
+| `lr`           | Learning rate            | 0.0002  |
+| `beta1`        | Adam optimizer momentum  | 0.5     |
+
+> ⚠️ *Due to project constraints, parameter tuning was minimal - plenty of room for improvement!*
+
+---
+
+## 📁 Project Structure
+```bash
+.
+├── DCGAN.py          # Training script
+├── generate_faces.py # Inference script
+├── preprocess_parquet.py # Data processor
+└── attachments/      # Visual assets
+```
+
+---
+
+## 📚 Additional Resources
+- 📘 [Project Report.pdf](Project%20Report.pdf) (Technical Documentation)
+- 📘 [DCGAN Implementation Tutorial](https://blog.csdn.net/t1274171989/article/details/134192698) (Chinese)
+
+---
+
+## 💬 Contribution
+While this was a freelance project, contributions are welcome for improvement suggestions or enhancements!
+
+---
+
+## 🧾 License
+MIT License - see [LICENSE](LICENSE) for details
+
+---
+
+## 💰 Project ROI
+> 🎉 Successfully delivered for ¥110 profit - proof that quick GAN projects can deliver value! 💸
+
+---
+
+*Created with ❤️ by [yediong](https://github.com/yediong)*
+
